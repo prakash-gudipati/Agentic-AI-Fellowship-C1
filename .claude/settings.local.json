@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmdkey /list)",
+      "Bash(git config:*)",
+      "Bash(git credential-manager:*)",
+      "Bash(printf \"protocol=https\\\\nhost=github.com\\\\n\")"
+    ]
+  }
+}
