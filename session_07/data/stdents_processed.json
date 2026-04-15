@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Priya Sharma",
+    "subject": "Data Science",
+    "score": 88,
+    "grade": "B",
+    "passed": true
+  },
+  {
+    "name": "Alex Chen",
+    "subject": "Machine Learning",
+    "score": 55,
+    "grade": "F",
+    "passed": false
+  },
+  {
+    "name": "Ravi Kumar",
+    "subject": "Data Science",
+    "score": 92,
+    "grade": "A",
+    "passed": true
+  },
+  {
+    "name": "Sarah Johnson",
+    "subject": "AI Ethics",
+    "score": 47,
+    "grade": "F",
+    "passed": false
+  },
+  {
+    "name": "Diego Ramirez",
+    "subject": "Data Science",
+    "score": 61,
+    "grade": "C",
+    "passed": true
+  },
+  {
+    "name": "Ananya Nair",
+    "subject": "AI Ethics",
+    "score": 83,
+    "grade": "B",
+    "passed": true
+  },
+  {
+    "name": "James Park",
+    "subject": "Machine Learning",
+    "score": 39,
+    "grade": "F",
+    "passed": false
+  }
+]
