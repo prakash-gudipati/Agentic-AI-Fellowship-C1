@@ -97,7 +97,7 @@ def main():
     display_report(location, weather)
 
     saved = saver.save(location, weather, WEATHER_CODES)
-    print(f"Result saved: {saved['city']}, {saved['country']} at {saved['timestamp'][:19]}")
+    print(f"Result saved successfully: {saved['city']}, {saved['country']} at {saved['timestamp'][:19]}")
     print(f"Open {OUTPUT_FILE} to see all saved results.\n")
 
 
