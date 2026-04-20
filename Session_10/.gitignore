@@ -1,0 +1,20 @@
+# Environment — NEVER commit API keys
+.env
+
+# Python virtual environment folder
+venv/
+.venv/
+
+# Python compiled bytecode — not needed in version control
+__pycache__/
+*.pyc
+*.pyo
+
+# Your personal goal data — not part of the codebase
+data/goals.json
+
+# macOS metadata
+.DS_Store
+
+# Windows metadata
+Thumbs.db
