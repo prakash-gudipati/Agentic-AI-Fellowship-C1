@@ -1,0 +1,12 @@
+# Production dependencies for the LLMClient wrapper.
+# Pinned-minimum so our retry/streaming/cost code keeps working as the
+# SDKs evolve. Bump on a deliberate cadence.
+
+openai>=1.50.0
+anthropic>=0.40.0
+tenacity>=9.0.0
+python-dotenv>=1.0.0
+tiktoken>=0.7.0
+
+# Test dependencies — install with: pip install -r requirements.txt -e ".[test]"
+pytest>=8.0.0
