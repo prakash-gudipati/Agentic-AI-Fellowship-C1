@@ -1,0 +1,25 @@
+{
+  "input_file": "data\\messy_article.txt",
+  "output_file": "data\\cleaned_output.json",
+  "original_chars": 1323,
+  "cleaned_chars": 1245,
+  "word_count": 200,
+  "chars_count": 1245,
+  "sentence_count": [
+    "The Indian Premier League: A Brief History|n\nThe Indian Premier League, commonly known as the IPL, is a professional Twenty20 cricket league in India. It was founded by the Board of Control for Cricket in India (BCCI) in 2007.\n\nThe league's first season was held in 2008. Eight teams competed in the inaugural tournament. The Rajasthan Royals, captained by Shane Warne, won the first IPL title.\n\nOver the years, the IPL has grown into one of the most-watched sporting events worldwide. It has produced many of the world's top cricketers and changed the way the game is played.\n\nIn the United States, the IPL has gained a small but loyal following. ESPN and Willow TV broadcast matches. Indian-American communities organise viewing parties for big finals. The 2023 final drew over 50,000 viewers in the U.S. alone.\n\nThe league's revenue model includes broadcasting rights, sponsorships, and ticket sales. In 2022, the IPL's media rights were sold for over ₹48,000 crore (approximately $6 billion USD).\n\n The IPL has also been the subject of controversies — match-fixing scandals, governance disputes, and player auction debates. Despite these issues, the league continues to thrive and inspire millions of cricket fans across India and the world."
+  ],
+  "cleaned_text": "The Indian Premier League: A Brief History|n\nThe Indian Premier League, commonly known as the IPL, is a professional Twenty20 cricket league in India. It was founded by the Board of Control for Cricket in India (BCCI) in 2007.\n\nThe league's first season was held in 2008. Eight teams competed in the inaugural tournament. The Rajasthan Royals, captained by Shane Warne, won the first IPL title.\n\nOver the years, the IPL has grown into one of the most-watched sporting events worldwide. It has produced many of the world's top cricketers and changed the way the game is played.\n\nIn the United States, the IPL has gained a small but loyal following. ESPN and Willow TV broadcast matches. Indian-American communities organise viewing parties for big finals. The 2023 final drew over 50,000 viewers in the U.S. alone.\n\nThe league's revenue model includes broadcasting rights, sponsorships, and ticket sales. In 2022, the IPL's media rights were sold for over ₹48,000 crore (approximately $6 billion USD).\n\n The IPL has also been the subject of controversies — match-fixing scandals, governance disputes, and player auction debates. Despite these issues, the league continues to thrive and inspire millions of cricket fans across India and the world.",
+  "paragraphs": [
+    "The Indian Premier League: A Brief History|n\nThe Indian Premier League, commonly known as the IPL, is a professional Twenty20 cricket league in India. It was founded by the Board of Control for Cricket in India (BCCI) in 2007.",
+    "The league's first season was held in 2008. Eight teams competed in the inaugural tournament. The Rajasthan Royals, captained by Shane Warne, won the first IPL title.",
+    "Over the years, the IPL has grown into one of the most-watched sporting events worldwide. It has produced many of the world's top cricketers and changed the way the game is played.",
+    "In the United States, the IPL has gained a small but loyal following. ESPN and Willow TV broadcast matches. Indian-American communities organise viewing parties for big finals. The 2023 final drew over 50,000 viewers in the U.S. alone.",
+    "The league's revenue model includes broadcasting rights, sponsorships, and ticket sales. In 2022, the IPL's media rights were sold for over ₹48,000 crore (approximately $6 billion USD).",
+    "The IPL has also been the subject of controversies — match-fixing scandals, governance disputes, and player auction debates. Despite these issues, the league continues to thrive and inspire millions of cricket fans across India and the world."
+  ],
+  "estimated_cost": {
+    "haiku": 0.000267,
+    "Gpt-40": 0.000668,
+    "o1": 0.004005
+  }
+}
