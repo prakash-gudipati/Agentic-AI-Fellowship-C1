@@ -1,0 +1,9 @@
+# Session 22 — Retrieval Techniques I
+# Same stack as S20/S21 — no new third-party dependencies today.
+
+openai>=1.40.0
+anthropic>=0.34.0
+numpy>=1.26.0
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+beautifulsoup4>=4.12.0
