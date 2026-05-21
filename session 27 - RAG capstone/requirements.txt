@@ -1,0 +1,31 @@
+# Session 27 -- RAG Capstone -- Production-Grade Pipeline
+#
+# Inherits the S26 stack (Ragas 0.2.x + LangSmith) AND adds ChromaDB
+# as the production vector-store default. Students bring their own
+# corpora at capstone scale; in-memory was a teaching tool.
+
+# -- SDKs (LLMs + embeddings) -- carry over from S25/S26 --
+anthropic>=0.39.0,<1.0.0
+openai>=1.42.0,<2.0.0
+
+# -- Document ingestion + numerics -- carry over --
+numpy>=1.26.0,<3.0.0
+pypdf>=4.0.0,<6.0.0
+beautifulsoup4>=4.12.0,<5.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# -- Eval framework (Ragas 0.2.x) -- carry over from S25 --
+ragas>=0.2.14,<0.3.0
+datasets>=2.14.0,<4.0.0
+langchain-core>=0.3.0,<0.4.0
+langchain-anthropic>=0.3.0,<0.4.0
+langchain-openai>=0.3.0,<0.4.0
+
+# -- Observability (LangSmith) -- carry over from S26 --
+langsmith>=0.1.0,<0.3.0
+
+# -- Vector store (NEW in S27) ---------------------------------------
+# Promoted from S19 cameo to production default in the capstone.
+# Persistent on-disk store; rehydrates the in-memory matrix on every
+# subsequent process boot without re-embedding.
+chromadb>=0.4.0,<2.0.0
