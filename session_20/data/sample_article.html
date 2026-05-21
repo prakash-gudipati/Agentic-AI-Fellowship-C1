@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Why RAG Beats Fine-Tuning for Most Production Use-Cases | Acme Engineering Blog</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="primary-nav">
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/products">Products</a>
+    <a href="/careers">Careers</a>
+    <a href="/contact">Contact Us</a>
+  </nav>
+  <div class="search-bar">
+    <input type="search" placeholder="Search the blog...">
+    <button>Go</button>
+  </div>
+  <div class="cookie-banner">
+    We use cookies to improve your experience. By using this site you agree to our cookie policy.
+    <button>Accept</button>
+    <button>Decline</button>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <h3>Recent posts</h3>
+  <ul>
+    <li><a href="/blog/post-1">Building a CLI in Python</a></li>
+    <li><a href="/blog/post-2">When to use Anthropic vs OpenAI</a></li>
+    <li><a href="/blog/post-3">Embeddings explained for product managers</a></li>
+  </ul>
+  <div class="ad-slot">[Sponsored — your ad here]</div>
+</aside>
+
+<main>
+<article>
+  <h1>Why RAG Beats Fine-Tuning for Most Production Use-Cases</h1>
+  <p class="byline">By the Acme Engineering team — published 12 March 2026 — 7 min read</p>
+
+  <p>Every team that builds with Large Language Models eventually asks the same question: should we fine-tune the model on our private data, or should we use Retrieval-Augmented Generation? In our experience running production AI workloads for over forty enterprise customers, the answer is RAG in nine out of ten cases. Here is why.</p>
+
+  <h2>RAG separates knowledge from reasoning</h2>
+  <p>A fine-tuned model bakes your private knowledge into its weights. To update a single document you must re-run the entire training job, which costs hundreds of dollars and takes hours. With RAG, your knowledge lives in a separate index — change a document, re-embed only that chunk, and the system is updated in seconds. Reasoning ability comes from the base model. Knowledge comes from your index. Keeping them separate is the key insight.</p>
+
+  <h2>RAG is auditable. Fine-tuning is a black box.</h2>
+  <p>When a RAG system answers a question, you can show the user exactly which chunks it used to compose the answer. This matters in regulated industries — healthcare, legal, financial services — where every claim must be traceable to a source. A fine-tuned model produces a confident sentence with no provenance. You cannot tell which training example contributed to which output token.</p>
+
+  <h2>RAG fails gracefully on out-of-domain questions</h2>
+  <p>If a user asks a RAG system a question whose answer is not in the index, retrieval returns low-similarity chunks and the prompt template instructs the model to refuse. A fine-tuned model has no such circuit breaker — it will hallucinate confidently because nothing in its prompt told it to stop. Refusal is a feature you can engineer in RAG and almost cannot engineer in fine-tuning.</p>
+
+  <h2>When fine-tuning still wins</h2>
+  <p>Fine-tuning beats RAG when the desired output is a stylistic transformation rather than a knowledge retrieval. If you want the model to respond in your brand voice, or to consistently structure its output as a specific schema, fine-tuning teaches that pattern more reliably than prompting. But these cases are the exception, not the rule.</p>
+
+  <p>For the rest of this series, we will build a production-grade RAG system from scratch, with no framework, in pure Python.</p>
+</article>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Acme Corp. All rights reserved.</p>
+  <p>Privacy Policy | Terms of Service | Do Not Sell My Personal Information</p>
+  <nav class="footer-nav">
+    <a href="/about">About</a>
+    <a href="/press">Press</a>
+    <a href="/investors">Investors</a>
+    <a href="/security">Security</a>
+  </nav>
+</footer>
+
+<script>
+  // Analytics tracking, ignored at this point
+  console.log("page view tracked");
+</script>
+
+</body>
+</html>
