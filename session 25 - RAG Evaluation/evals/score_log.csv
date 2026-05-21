@@ -1,0 +1,2 @@
+timestamp_utc,git_hash,retriever_name,cache_hit_rate,faithfulness,answer_relevancy,context_precision,context_recall,intent_faithfulness,custom_pass_rate,notes
+2026-05-18T03:51:16+00:00,,similarity,1.0,0.9550000000000001,0.23629162660677067,0.19999999998,0.15,0.0,0.0,demo.py - Ragas deep dive

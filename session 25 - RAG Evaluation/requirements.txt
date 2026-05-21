@@ -1,0 +1,29 @@
+# Session 25 — Production RAG Evaluation — Ragas Deep Dive
+# DeepEval is deferred to S41 (Guardrails) and S42 (EDD).
+#
+# Versions below are pinned to ranges known to work together as of
+# 2026-05. The Ragas 0.2.x line changed the LLM + embeddings adapter
+# API; we pin to <0.3.0 to avoid a future minor release breaking the
+# `TestsetGenerator.from_langchain(llm=, embedding_model=)` signature
+# we depend on in evals/synthetic_dataset.py and evals/harness_ragas.py.
+
+# ── SDKs (LLMs + embeddings) ──────────────────────────────────────────────
+anthropic>=0.39.0,<1.0.0
+openai>=1.42.0,<2.0.0
+
+# ── Document ingestion + numerics ─────────────────────────────────────────
+numpy>=1.26.0,<3.0.0
+pypdf>=4.0.0,<6.0.0
+beautifulsoup4>=4.12.0,<5.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# ── Eval framework (Ragas 0.2.x line) ─────────────────────────────────────
+ragas>=0.2.14,<0.3.0
+datasets>=2.14.0,<4.0.0
+
+# ── LangChain adapters that Ragas 0.2.x wraps ─────────────────────────────
+# These ship the LangchainLLMWrapper / LangchainEmbeddingsWrapper compatible
+# ChatAnthropic and OpenAIEmbeddings used in harness_ragas.py + synthetic_dataset.py.
+langchain-core>=0.3.0,<0.4.0
+langchain-anthropic>=0.3.0,<0.4.0
+langchain-openai>=0.3.0,<0.4.0

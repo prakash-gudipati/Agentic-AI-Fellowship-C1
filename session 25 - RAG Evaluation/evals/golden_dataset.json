@@ -1,0 +1,97 @@
+{
+  "$schema_note": "10 production-style eval rows. Every row has the question the user might ask, the ground-truth answer a human SME would write, and the ground-truth contexts that should be retrieved. Ragas and DeepEval both read this file.",
+  "rows": [
+    {
+      "question": "What is retrieval-augmented generation?",
+      "ground_truth": "Retrieval-augmented generation (RAG) is a pattern where an LLM answers a question using passages retrieved from an external document store, instead of relying only on the model's training data. The retrieved passages are passed in as context for the answer.",
+      "ground_truth_contexts": [
+        "Retrieval-augmented generation (RAG) combines a retrieval step over external documents with an LLM generation step.",
+        "Instead of relying on the model's training data alone, RAG retrieves relevant passages and supplies them to the model as additional context."
+      ],
+      "metadata": {"category": "concept", "source_type": "article"}
+    },
+    {
+      "question": "When should I prefer retrieval over fine-tuning a smaller model on my data?",
+      "ground_truth": "Prefer retrieval when the document set changes often, when you need source attribution, or when training a model on your corpus is too expensive or slow. Fine-tuning is better for changing the model's STYLE; retrieval is better for changing the model's KNOWLEDGE.",
+      "ground_truth_contexts": [
+        "Retrieval is preferred when documents change frequently, attribution matters, or fine-tuning is impractical.",
+        "Fine-tuning is best for adjusting STYLE; retrieval is best for adjusting KNOWLEDGE."
+      ],
+      "metadata": {"category": "decision", "source_type": "article"}
+    },
+    {
+      "question": "How do I install the WidgetMax 3000?",
+      "ground_truth": "Plug the WidgetMax 3000 into a grounded outlet, press the power button on the rear panel for two seconds, and wait for the green status light. Setup is then complete and the device is ready to use.",
+      "ground_truth_contexts": [
+        "Plug the WidgetMax 3000 into a grounded outlet.",
+        "Press and hold the power button on the rear panel for two seconds.",
+        "Wait for the green status light to indicate readiness."
+      ],
+      "metadata": {"category": "instruction", "source_type": "manual"}
+    },
+    {
+      "question": "What does the red blinking light on the WidgetMax 3000 mean?",
+      "ground_truth": "A red blinking light indicates a fault state — most commonly an unplugged sensor cable or an overheating warning. The recommended action is to unplug the device, wait one minute, and reconnect.",
+      "ground_truth_contexts": [
+        "A red blinking light indicates a fault state on the WidgetMax 3000.",
+        "Most often the cause is an unplugged sensor cable or an overheating warning.",
+        "Unplug the device, wait one minute, and reconnect to clear the fault."
+      ],
+      "metadata": {"category": "troubleshooting", "source_type": "manual"}
+    },
+    {
+      "question": "What chunk size is generally recommended for RAG over technical documents?",
+      "ground_truth": "A starting range of 400–600 characters with 80–100 characters of overlap works well for most technical documents. Adjust upward for narrative prose and downward for structured reference material.",
+      "ground_truth_contexts": [
+        "For technical documents, a chunk size of 400 to 600 characters with 80 to 100 characters of overlap is a strong default.",
+        "Longer narrative prose may benefit from larger chunks; structured reference material often benefits from smaller chunks."
+      ],
+      "metadata": {"category": "decision", "source_type": "article"}
+    },
+    {
+      "question": "Why does a chunk that says 'the rate dropped to 12%' often fail to retrieve?",
+      "ground_truth": "Because the chunk has lost its surrounding context — it does not say WHICH rate, WHICH document, or WHICH time period. Its embedding therefore matches very few queries. Contextual retrieval (prepending a short prefix that names the document and section before embedding) fixes this.",
+      "ground_truth_contexts": [
+        "Chunks that lose surrounding context produce embeddings with weak semantic meaning.",
+        "Contextual retrieval prepends a short summary of the surrounding context to each chunk before embedding."
+      ],
+      "metadata": {"category": "concept", "source_type": "article"}
+    },
+    {
+      "question": "What does hybrid search combine?",
+      "ground_truth": "Hybrid search combines dense (semantic / embedding-based) similarity with sparse (lexical / keyword-based, typically BM25) search. The two scores are fused so the retriever benefits from both meaning-matching and exact-term-matching.",
+      "ground_truth_contexts": [
+        "Hybrid search combines a dense embedding-based retriever with a sparse keyword-based retriever (typically BM25).",
+        "The two scores are fused so that the system benefits from both semantic matching and exact term matching."
+      ],
+      "metadata": {"category": "concept", "source_type": "article"}
+    },
+    {
+      "question": "Which metric in Ragas measures whether the answer is grounded in the retrieved context?",
+      "ground_truth": "Faithfulness. It scores from 0 to 1, where 1 means every claim in the answer is supported by the retrieved context and lower values indicate hallucinated or unsupported claims.",
+      "ground_truth_contexts": [
+        "Faithfulness measures how well the answer is grounded in the retrieved context.",
+        "Faithfulness produces a score between 0 and 1; a score of 1 means every claim is supported by the context."
+      ],
+      "metadata": {"category": "eval-metric", "source_type": "article"}
+    },
+    {
+      "question": "Which Ragas metric tells you how many of the chunks you retrieved were actually useful?",
+      "ground_truth": "Context precision. It measures the proportion of retrieved chunks that contain information relevant to producing the ground-truth answer.",
+      "ground_truth_contexts": [
+        "Context precision measures the proportion of retrieved chunks that are relevant to the ground-truth answer.",
+        "A low context precision score indicates the retriever is returning many off-topic chunks."
+      ],
+      "metadata": {"category": "eval-metric", "source_type": "article"}
+    },
+    {
+      "question": "Why is it not safe to skip the embedding cache during repeated dev runs?",
+      "ground_truth": "Because embedding the same corpus repeatedly is slow and costs money. With a content-hash-based cache (model name + sha256 of the chunk text), unchanged chunks are never re-embedded, so dev runs are fast and only changed chunks incur a real API call.",
+      "ground_truth_contexts": [
+        "Embedding a large corpus is slow and costs money.",
+        "An embedding cache keyed by (model name, sha256(chunk text)) avoids re-embedding chunks whose text has not changed."
+      ],
+      "metadata": {"category": "decision", "source_type": "article"}
+    }
+  ]
+}
