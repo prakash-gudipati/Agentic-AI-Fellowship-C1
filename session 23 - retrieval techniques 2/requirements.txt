@@ -1,0 +1,9 @@
+# Session 23 — Retrieval Techniques II — Hybrid Search + Reranking
+# Same surface as S22 plus the anthropic SDK for the reranker (LLM-as-judge).
+
+anthropic>=0.39.0
+openai>=1.42.0
+numpy>=1.26.0
+pypdf>=4.0.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
