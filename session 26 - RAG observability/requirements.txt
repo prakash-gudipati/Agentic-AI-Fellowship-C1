@@ -1,0 +1,33 @@
+# Session 26 — Observability — Tracing, Debugging + Cost Management
+#
+# Anchored on LangSmith (the hosted observability + eval platform from
+# the LangChain team — THE 2025-2026 production default). Opik is the
+# open-source self-hosted alternative; we mention it but do not depend
+# on it. Token counts and dollar cost are pulled from the LLM response
+# automatically by langsmith>=0.1.0 via `wrap_anthropic` — no tiktoken
+# needed and no custom CostMeter.
+
+# ── SDKs (LLMs + embeddings) — carry over from S25 ────────────────────────
+anthropic>=0.39.0,<1.0.0
+openai>=1.42.0,<2.0.0
+
+# ── Document ingestion + numerics — carry over ────────────────────────────
+numpy>=1.26.0,<3.0.0
+pypdf>=4.0.0,<6.0.0
+beautifulsoup4>=4.12.0,<5.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# ── Eval framework (Ragas 0.2.x line — carry over from S25) ───────────────
+ragas>=0.2.14,<0.3.0
+datasets>=2.14.0,<4.0.0
+langchain-core>=0.3.0,<0.4.0
+langchain-anthropic>=0.3.0,<0.4.0
+langchain-openai>=0.3.0,<0.4.0
+
+# ── Observability (NEW in S26) ────────────────────────────────────────────
+# langsmith>=0.1.0 ships:
+#   - `from langsmith import traceable, Client` — the decorator + API
+#   - `from langsmith.wrappers import wrap_anthropic, wrap_openai` — the
+#     auto-instrumentation entry points used by `wrap_llm_client(...)` in
+#     `observability/langsmith_tracing.py`.
+langsmith>=0.1.0,<0.3.0
