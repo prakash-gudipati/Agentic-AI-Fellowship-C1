@@ -1,0 +1,11 @@
+# Review Radar — pinned dependencies (T0 scaffold)
+# Web framework + ASGI server
+fastapi==0.115.6
+uvicorn==0.34.0
+# The AI brain (Claude) — model id comes from config.MODEL, never hardcoded
+anthropic==0.42.0
+# Local-dev convenience: load_dotenv() reads a local .env into os.environ
+python-dotenv==1.0.1
+# Tests (offline suite runs with FAKE_LLM=1; httpx powers the FastAPI test client)
+pytest==8.3.4
+httpx==0.28.1
