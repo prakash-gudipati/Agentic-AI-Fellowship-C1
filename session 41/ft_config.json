@@ -1,0 +1,24 @@
+{
+  "file_id": "file-SmEpRoTtRH2YDsDmizt7k6",
+  "train_path": "training_data.jsonl",
+  "job_id": "ftjob-FAKE001xyz789",
+  "base_model": "gpt-4o-mini-2024-07-18",
+  "fine_tuned_model": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+  "metrics": [
+    {
+      "epoch": 1,
+      "train_loss": 1.284,
+      "val_loss": 1.291
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.831,
+      "val_loss": 0.849
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.342,
+      "val_loss": 0.518
+    }
+  ]
+}

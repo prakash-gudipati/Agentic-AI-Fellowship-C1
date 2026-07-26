@@ -1,0 +1,56 @@
+[
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-07T09:27:27.664841+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": false
+  },
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-08T18:43:45.373953+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": false
+  },
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-09T02:35:07.216775+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": false
+  },
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-09T02:35:35.902230+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": false
+  },
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-09T02:35:59.771243+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": false
+  },
+  {
+    "model_id": "ft:gpt-4o-mini-2024-07-18:test:ticket-classifier:FAKE001",
+    "dataset_version": "v1.0",
+    "eval_score": 0.9,
+    "prompt_hash": "de428c7ba163bf84",
+    "trained_at": "2026-06-09T03:41:10.963327+00:00",
+    "note": "Initial fine-tune: support ticket classifier v1.0",
+    "active": true
+  }
+]

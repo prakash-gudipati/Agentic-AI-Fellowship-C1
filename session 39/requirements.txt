@@ -1,0 +1,14 @@
+# Session 39 — LangGraph Advanced: Persistence, HITL + Long-Term Memory
+# Python 3.10+
+
+langgraph>=1.0                 # the graph engine: nodes, edges, state, cycles
+langgraph-checkpoint-sqlite>=2.0  # SqliteSaver — durable, file-backed checkpoints
+langchain-anthropic>=1.0       # ChatAnthropic — the real model adapter
+langchain-core>=1.0            # Runnable / message types (pulled in by the above)
+
+# Real web search — at least ONE of these (skip for FAKE_LLM offline runs):
+tavily-python>=0.5             # primary: LLM-friendly search, needs TAVILY_API_KEY
+ddgs>=9.0                      # fallback: DuckDuckGo, NO API key required
+
+# Optional: draw the graph as ASCII via `python demo.py --graph`
+grandalf>=0.8

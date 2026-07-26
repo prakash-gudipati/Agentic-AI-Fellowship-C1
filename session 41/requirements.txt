@@ -1,0 +1,4 @@
+# Session 41 — Fine-Tuning Fundamentals
+openai>=1.30.0          # OpenAI fine-tuning API
+python-dotenv>=1.0.0    # .env file loading
+# tiktoken>=0.7.0       # optional: precise token counting (fallback built-in)

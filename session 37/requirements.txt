@@ -1,0 +1,12 @@
+# Session 37 — LangChain reference code dependencies.
+#
+# Install:  pip install -r requirements.txt
+# Offline demos need only the first three lines (no provider key required).
+
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-text-splitters>=1.0,<2.0
+
+# Needed ONLY for real Anthropic calls (i.e. when FAKE_LLM is unset).
+langchain-anthropic>=1.0,<2.0
+anthropic>=0.40,<1.0

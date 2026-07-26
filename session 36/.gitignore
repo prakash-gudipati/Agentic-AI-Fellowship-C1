@@ -1,0 +1,10 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local secrets
+.env
+
+# Demo-generated workspace files (product_brief.txt is the only seed file)
+workspace/note.txt
+workspace/*.tmp

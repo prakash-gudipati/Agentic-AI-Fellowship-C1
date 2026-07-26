@@ -1,0 +1,5 @@
+# Session 36 — MCP — Model Context Protocol
+# The official MCP Python SDK (FastMCP server class ships inside it).
+mcp>=1.2.0
+# The agent brain. Optional: every demo runs offline with FAKE_LLM=1.
+anthropic>=0.40.0

@@ -1,0 +1,7 @@
+PrepDeck — Product Brief (internal)
+
+Summary: PrepDeck is an AI career-prep assistant for freshers.
+Primary model: Claude Haiku 4.5 for routing, Sonnet for long-form feedback.
+Launch date: 14 August 2026 (public beta).
+Pricing tiers: Free, Pro, Team.
+On-call rotation: primary shift is 9 hours, Austin office.

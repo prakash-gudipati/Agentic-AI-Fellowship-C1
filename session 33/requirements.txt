@@ -1,0 +1,9 @@
+# Session 33 — Agentic RAG (Agent-Controlled Retrieval)
+# Minimum install. The hash embedder lets you skip sentence-transformers
+# entirely for the in-class demos.
+
+anthropic>=0.40,<1.0
+chromadb>=0.4.22,<2.0
+
+# Optional — only needed if USE_REAL_EMBEDDINGS=1
+sentence-transformers>=2.7,<5.0

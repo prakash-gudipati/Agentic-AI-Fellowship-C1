@@ -1,0 +1,2 @@
+# Session 34 — Multi-Agent Systems I: Patterns
+anthropic>=0.40,<1.0
